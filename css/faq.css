@@ -1,0 +1,87 @@
+/* CSS específico para FAQ */
+
+.faq-container {
+  flex: 1;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: linear-gradient(120deg, #ffffffee, #e0f7faee);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.faq-container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00796b;
+}
+
+.faq {
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faq:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #004d40;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-question .emoji {
+  margin-right: 12px;
+  font-size: 1.6rem;
+}
+
+.faq-question span:last-child {
+  font-size: 1.4rem;
+  transition: transform 0.3s;
+}
+
+.faq-answer {
+  max-height: 0;
+  padding: 0 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  overflow: hidden;
+}
+
+.faq.active .faq-answer {
+  padding: 20px;
+  max-height: 500px;
+}
+
+.faq.active .faq-question span:last-child {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .faq-container {
+    padding: 40px 10px;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 16px;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+}

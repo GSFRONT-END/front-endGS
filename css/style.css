@@ -302,3 +302,27 @@ main.conteudo {
   width: 100%;
   box-sizing: border-box;
 }
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  /* Aqui vão seus ajustes para telas pequenas */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  /* Ajustes para telas ≥ 600px */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Ajustes para telas ≥ 768px */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Ajustes para telas ≥ 992px */
+}
+
+/* Extra-Large devices (large laptops and desktops, 1300px and up) */
+@media (min-width: 1300px) {
+  /* Ajustes para telas ≥ 1300px */
+}
