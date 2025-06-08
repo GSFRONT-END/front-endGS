@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #FF0000;
+}
+
+#modo-escuro-toggle {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#modo-escuro-toggle:hover {
+  color: #FF0000;
+}
+
+.quem-somos-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#integrantes-section h2 {
+  color: #FF0000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.integrante {
+  background-color: #1A1A1A;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.integrante:hover {
+  transform: scale(1.02);
+}
+
+.integrante h3 {
+  color: #FF0000;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.integrante p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.integrante .nome,
+.integrante .curso,
+.integrante .faculdade {
+  color: #FFFFFF;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 14px;
+}
