@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📩 Contato - Pulse One</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <img src="images/logo.png" alt="Pulse One Logo" class="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="quem-somos.html">👥 Quem Somos</a></li>
+        <li><a href="faq.html">❓ FAQ</a></li>
+        <li><a href="contato.html">📩 Contato</a></li>
+        <li><a href="historia.html">📚 História</a></li>
+      </ul>
+    </nav>
+    <button id="modo-escuro-toggle">🌗</button>
+  </header>
+
+  <section class="features">
+    <h2>📩 Entre em Contato Conosco</h2>
+    <form onsubmit="alert('Obrigado por enviar sua mensagem!'); return false;">
+      <label>Nome:</label>
+      <input type="text" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Já teve dengue?</label>
+      <select>
+        <option value="nao">Não</option>
+        <option value="sim">Sim</option>
+        <option value="nao-sei">Não sei</option>
+      </select>
+
+      <label>Mensagem:</label>
+      <textarea rows="5" placeholder="Deixe seu comentário..."></textarea>
+
+      <button type="submit">Enviar ✉️</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pulse One 🌍 - Desenvolvido com 💚 por jovens inovadores</p>
+  </footer>
+</body>
+</html>
