@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>📚 História - Pulse One</title>
-  <link rel="stylesheet" href="css/style.css" />
+ <link rel="stylesheet" href="css/style.css"  href="css/stylehistoria.css"/>
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <header class="navbar">
-    <img src="images/logo.png" alt="Pulse One Logo" class="logo">
+    <img src="images/logo.png.jpeg" alt="Pulse One Logo" class="logo">
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">🏠 Início</a></li>
@@ -22,24 +22,42 @@
     <button id="modo-escuro-toggle">🌗</button>
   </header>
 
-  <section class="features">
-    <h2>📚 A História da Dengue e das Queimadas</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/dengue.jpg" alt="Mosquito da dengue" />
-        <h3>Dengue no Brasil</h3>
-        <p>A dengue é causada pelo mosquito Aedes aegypti e afeta milhões todos os anos no Brasil. Prevenção é essencial!</p>
+  <main class="historia">  <main class="conteudo">
+    <section class="historia-conteudo">
+      <h1 data-animar="animate-fade-in">🦟 História da Dengue</h1>
+      <div class="historia-texto" data-animar="animate-slide-left">
+        <p>
+          A dengue é uma doença infecciosa causada por um vírus transmitido principalmente pelo mosquito <strong>Aedes aegypti</strong>. Sua história remonta à <strong>China no século III</strong>. No entanto, a doença só foi claramente identificada no século XVIII, durante surtos em várias partes do mundo.
+        </p>
+        <p>
+          O vírus possui <strong>quatro sorotipos</strong> (DENV-1, DENV-2, DENV-3 e DENV-4). A infecção por um deles não protege contra os demais. A falta de saneamento e o crescimento urbano desordenado contribuíram para sua expansão, principalmente em regiões tropicais.
+        </p>
+        <p>
+          No Brasil, os primeiros casos ocorreram na década de <strong>1980</strong>, e desde então enfrentamos surtos frequentes. Formas graves incluem a <strong>dengue hemorrágica</strong>. Hoje, campanhas de prevenção e vacinas são nossos principais aliados. 💉🧼🧬
+        </p>
       </div>
-      <div class="card">
-        <img src="images/queimada.jpg" alt="Floresta em chamas" />
-        <h3>Queimadas</h3>
-        <p>As queimadas destroem a fauna, a flora e afetam o clima. Monitoramento e ação rápida são cruciais.</p>
-      </div>
-    </div>
-  </section>
+      <img src="images/dengue.jpg" alt="Infográfico sobre dengue" class="historia-img" data-animar="animate-fade-in">
+    </section>
 
+    <section class="historia-conteudo">
+      <h1 data-animar="animate-fade-in">🔥 Queimadas no Brasil</h1>
+      <div class="historia-texto" data-animar="animate-slide-right">
+        <p>
+          As queimadas fazem parte da história do Brasil desde o período colonial, usadas para limpeza de áreas agrícolas. Porém, seu uso descontrolado se intensificou nas últimas décadas, causando danos ao meio ambiente e à saúde pública.
+        </p>
+        <p>
+          Atualmente, queimadas ilegais e a seca agravam os incêndios, principalmente na <strong>Amazônia</strong> e no <strong>Cerrado</strong>. Isso compromete ecossistemas, ameaça espécies e contribui para o aquecimento global. 🌍🔥
+        </p>
+        <p>
+          O sensor <strong>Pulse One</strong> atua na prevenção: ele mede <strong>temperatura</strong> e detecta <strong>alterações ambientais em tempo real</strong>, ajudando comunidades e autoridades a responder antes que o fogo se espalhe. 📡🌡️
+        </p>
+      </div>
+      <img src="images/queimada.jpg" alt="Imagem de queimada" class="historia-img" data-animar="animate-fade-in">
+    </section>
+  </main>
+  </main>
   <footer>
-    <p>&copy; 2025 Pulse One 🌍 - Desenvolvido com 💚 por jovens inovadores</p>
+    <p>&copy; 2025 Pulse One 🌱 Desenvolvido com ❤️ por estudantes inovadores</p>
   </footer>
 </body>
 </html>

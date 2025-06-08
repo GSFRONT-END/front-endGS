@@ -1,0 +1,25 @@
+/* Animações */
+.animate-fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+.animate-slide-left {
+  animation: slideLeft 1.2s ease forwards;
+}
+.animate-slide-right {
+  animation: slideRight 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}

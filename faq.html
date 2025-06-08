@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>📚 História - Pulse One</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>❓ FAQ - Pulse One</title>
+  <link rel="stylesheet" href="css/style.css" href="css/stylefaq.css"/>
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <header class="navbar">
-    <img src="images/logo.png" alt="Pulse One Logo" class="logo">
+    <img src="images/logo.png.jpeg" alt="Pulse One Logo" class="logo">
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">🏠 Início</a></li>
@@ -22,21 +22,44 @@
     <button id="modo-escuro-toggle">🌗</button>
   </header>
 
-  <section class="features">
-    <h2>📚 A História da Dengue e das Queimadas</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/dengue.jpg" alt="Mosquito da dengue" />
-        <h3>Dengue no Brasil</h3>
-        <p>A dengue é causada pelo mosquito Aedes aegypti e afeta milhões todos os anos no Brasil. Prevenção é essencial!</p>
-      </div>
-      <div class="card">
-        <img src="images/queimada.jpg" alt="Floresta em chamas" />
-        <h3>Queimadas</h3>
-        <p>As queimadas destroem a fauna, a flora e afetam o clima. Monitoramento e ação rápida são cruciais.</p>
+    <main class="conteudo">
+    <h2 data-animar="animate-fade-in">❓ Perguntas Frequentes</h2>
+    
+    <div class="faq-item" data-animar="animate-slide-left">
+      <button class="faq-pergunta">📡 Como o sensor detecta água parada?</button>
+      <div class="faq-resposta">
+        <p>O Pulse One utiliza sensores ultrassônicos e de umidade para identificar áreas com acúmulo de água. Esses dados são analisados e enviados automaticamente para alertar os responsáveis locais.</p>
       </div>
     </div>
-  </section>
+
+    <div class="faq-item" data-animar="animate-slide-right">
+      <button class="faq-pergunta">🔥 O sensor realmente ajuda a evitar queimadas?</button>
+      <div class="faq-resposta">
+        <p>Sim! Ele monitora a temperatura ambiente e mudanças bruscas no microclima. Se houver risco de combustão espontânea, um alerta é disparado imediatamente. 🌡️🔥</p>
+      </div>
+    </div>
+
+    <div class="faq-item" data-animar="animate-slide-left">
+      <button class="faq-pergunta">📲 Precisa de internet para funcionar?</button>
+      <div class="faq-resposta">
+        <p>Não necessariamente. O Pulse One armazena os dados localmente e os envia assim que uma conexão estiver disponível. Para alertas em tempo real, recomenda-se conexão Wi-Fi ou 4G.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" data-animar="animate-slide-right">
+      <button class="faq-pergunta">🛠️ É difícil de instalar?</button>
+      <div class="faq-resposta">
+        <p>Não! Ele é compacto, leve e pronto para uso com apenas alguns passos. Basta conectar à energia, posicionar o sensor e sincronizar com o app. Em poucos minutos está funcionando! ⚙️</p>
+      </div>
+    </div>
+
+    <div class="faq-item" data-animar="animate-slide-left">
+      <button class="faq-pergunta">📊 Onde posso acompanhar os dados?</button>
+      <div class="faq-resposta">
+        <p>Você pode ver tudo pelo painel web e pelo app para celular: temperatura, umidade, localização de água parada e alertas em tempo real. Tudo com gráficos e mapas interativos. 🌍📈</p>
+      </div>
+    </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 Pulse One 🌍 - Desenvolvido com 💚 por jovens inovadores</p>

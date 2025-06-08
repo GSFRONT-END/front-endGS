@@ -28,7 +28,7 @@ body.dark-mode footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #004466;
+  background-color: #000000;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -73,7 +73,7 @@ body.dark-mode footer {
 
 .hero-content h1 {
   font-size: 2.5rem;
-  color: #00695c;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
@@ -94,7 +94,7 @@ body.dark-mode footer {
 
 /* ===== BUTTON ===== */
 .btn-destaque {
-  background-color: #00796b;
+  background-color: #000000;
   color: white;
   padding: 0.8rem 1.5rem;
   text-decoration: none;
@@ -107,7 +107,6 @@ body.dark-mode footer {
   background-color: #004d40;
 }
 
-/* ===== FEATURES SECTION ===== */
 .features {
   padding: 3rem 2rem;
   background-color: #f0f4f8;
@@ -146,7 +145,7 @@ body.dark-mode footer {
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: #004466;
+  background-color: #010c11;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -176,4 +175,130 @@ footer {
   body {
     font-size: 18px;
   }
+}
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Classe que será adicionada com JS */
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-slide-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-slide-right {
+  animation: slideInRight 1s ease forwards;
+}
+
+/* Logo personalizada */
+.logo {
+  width: 160px;
+  height: auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(2px 2px 4px #000000aa);
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.08) rotate(-2deg);
+  filter: drop-shadow(3px 3px 8px #ff0000cc);
+}
+
+/* Cabeçalho estilizado */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #000000, #1a1a1a);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo com animação */
+.logo {
+  width: 160px;
+  height: auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(2px 2px 4px #000000aa);
+  animation: logoFadeIn 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Ao carregar */
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Ao passar o mouse */
+.logo:hover {
+  transform: scale(1.08) rotate(-2deg);
+  filter: drop-shadow(3px 3px 8px #ff0000cc);
+}
+
+/* Responsividade para logo */
+@media (max-width: 600px) {
+  .logo {
+    width: 110px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+/* Aplica a todos os documentos HTML */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estrutura flex para empurrar o footer sempre para o fim */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Essa classe precisa estar nas tags <main> de cada página */
+main.conteudo {
+  flex: 1; /* Cresce para preencher a altura */
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
